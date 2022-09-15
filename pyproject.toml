@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["Engin AKGÜL <97546252+Egooneer@users.noreply.github.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+leanapi="^0.0.11"
+sqlraw="^0.1.3"
+unicorn="^1.0.3"
+fastapi = "^0.82.0"
+uvicorn = "^0.18.3"
+sqlalchemy= "^1.4.41"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+api='api.main:start'
